@@ -39,7 +39,7 @@ app.use("/api/submission", submissionRoutes(io));
 app.use("/api", authRoutes);
 
 app.use((req, res, next) => {
-  res.status(404).json({ message: "Route not found" });
+  res.status(404).json({ message: "Please visit https://dashboard-mern-three.vercel.app/  to test the service" });
 });
 
 const port = process.env.PORT || 5000;
